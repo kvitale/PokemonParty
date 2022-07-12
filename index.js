@@ -35,4 +35,10 @@ function pokemonCard(pokeData) {
     const pokemonNumber = document.createElement('p')
     pokemonNumber.innerText = `#${pokeData.id}`
     const pTypes = document.createElement('ul')
+    const img = pokeData.sprites.front_default
+    const shinyImg = pokeData.sprites.front_shiny
+    const finalImg = `<img src="${img}" data-img="${shinyImg}">`
+    const btn = document.createElement('button')
+    btn.className = 'add-btn'
+    btn.textContent = 'Add Pokemon To Party!'
 }
