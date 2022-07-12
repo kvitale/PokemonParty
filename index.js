@@ -28,6 +28,7 @@ function pokemonTypes(types, ul) {
 }
 
 function pokemonCard(pokeData) {
+    const pokemonPack = document.getElementById('poke-container');
+    const pokemonContainer = document.createElement("div")
 
-    
 }
