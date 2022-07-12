@@ -19,7 +19,6 @@ function pokemonData(pokemon) {
 }
 fetchPokemon()
 
-
 function pokemonTypes(types, ul) {
     types.forEach(function (type) {
         const li = document.createElement('li');
@@ -27,5 +26,4 @@ function pokemonTypes(types, ul) {
         ul.append(li)
     })
 }
-
 
