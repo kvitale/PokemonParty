@@ -20,3 +20,12 @@ function pokemonData(pokemon) {
 fetchPokemon()
 
 
+function pokemonTypes(types, ul) {
+    types.forEach(function (type) {
+        const li = document.createElement('li');
+        li.innerText = type['type']['name'];
+        ul.append(li)
+    })
+}
+
+
