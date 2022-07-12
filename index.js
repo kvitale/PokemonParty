@@ -46,7 +46,7 @@ function pokemonCard(pokeData) {
     btn.className = 'add-btn'
     btn.textContent = 'Add Pokemon To Party!'
     btn.addEventListener('click', (e) => {
-
+        
     })
     const likeHearts = document.createElement('button')
     likeHearts.className = 'like-btn'
@@ -62,4 +62,5 @@ function pokemonCard(pokeData) {
 
 
 }
+
 
