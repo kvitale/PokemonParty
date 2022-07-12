@@ -15,6 +15,6 @@ You're invited to a party, a Pokemon Party!
 
 ## Description 
 
-Pokemon Party is a SPA(Single Page Application) that allows you to create a list of your favorite Pokemon
+Pokemon Party is a SPA(Single Page Application) that allows you to create a dream party of your favorite Pokemon!
 
 
