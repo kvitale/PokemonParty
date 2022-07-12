@@ -57,3 +57,10 @@ function pokemonCard(pokeData) {
     pokemonContainer.append(likeHearts);
     pokemonPack.appendChild(pokemonContainer);
 }
+
+function filterPokemon(){
+    let dropdown = document.querySelector('pokemon-dropdown')
+    dropdown.addEventListener('change', e => {
+        selectPokemon(e.target.value)
+    })
+}
