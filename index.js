@@ -8,4 +8,15 @@ function fetchPokemon() {
         })
 }
 
+function pokemonData(pokemon) {
+    const url = pokemon.url
+    fetch(url)
+        .then(response => response.json())
+        .then(function (pokemon) {
+            console.log(pokemon)
+            pokemonCard(pokemon)
+        })
+}
+fetchPokemon()
+
 
