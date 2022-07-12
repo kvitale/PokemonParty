@@ -30,5 +30,9 @@ function pokemonTypes(types, ul) {
 function pokemonCard(pokeData) {
     const pokemonPack = document.getElementById('poke-container');
     const pokemonContainer = document.createElement("div")
-
+    const pokemonName = document.createElement('h4')
+    pokemonName.innerText = pokeData.name
+    const pokemonNumber = document.createElement('p')
+    pokemonNumber.innerText = `#${pokeData.id}`
+    const pTypes = document.createElement('ul')
 }
