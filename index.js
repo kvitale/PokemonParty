@@ -27,3 +27,7 @@ function pokemonTypes(types, ul) {
     })
 }
 
+function pokemonCard(pokeData) {
+
+    
+}
