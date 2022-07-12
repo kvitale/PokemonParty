@@ -45,4 +45,8 @@ function pokemonCard(pokeData) {
     btn.addEventListener('click', (e) => {
         
     })
+
+    const likeHearts = document.createElement('button')
+    likeHearts.className = 'like-btn'
+    likeHearts.textContent = ' ♡ '
 }
