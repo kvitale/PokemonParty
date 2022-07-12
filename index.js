@@ -49,4 +49,11 @@ function pokemonCard(pokeData) {
     const likeHearts = document.createElement('button')
     likeHearts.className = 'like-btn'
     likeHearts.textContent = ' ♡ '
+
+    pokemonTypes(pokeData.types, pTypes)
+    pokemonContainer.append(pokemonName, pokemonNumber);
+    pokemonContainer.innerHTML += finalImg;
+    pokemonContainer.append(pTypes, btn,);
+    pokemonContainer.append(likeHearts);
+    pokemonPack.appendChild(pokemonContainer);
 }
