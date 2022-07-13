@@ -1,6 +1,6 @@
 # Pokemon Party!
 
-<!-- Project Image -->
+![Project Image](https://www.pkmncast.com/news/2013/9/16/gotta-catch-em-all)
 
 You're invited to a party, a Pokemon Party!
 
@@ -8,7 +8,7 @@ You're invited to a party, a Pokemon Party!
 - [Description](#description)
 - [How to use](#how-to-use)
 - [Built From](#built-from)
-- [License](#license)
+- [How to install](#how-to-install)
 - [Author Info](#author-info)
 
 ---
@@ -30,6 +30,12 @@ You're invited to a party, a Pokemon Party!
 - Javascript
 - HTML
 - CSS
+
+## How to install
+
+- Fork and clone this repository to your local enviroment
+- Open the index.html file (mac: open index.html windows: explorer.exe index.html)
+- Enjoy the Poke fun!
 
 
 
