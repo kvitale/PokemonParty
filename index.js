@@ -13,7 +13,6 @@ function pokemonData(pokemon) {
     fetch(url)
         .then(response => response.json())
         .then(function (pokemon) {
-            console.log(pokemon)
             pokemonCard(pokemon)
         })
 }
@@ -37,14 +36,12 @@ function pokemonCard(pokeData) {
     const pTypes = document.createElement('ul')
     const img = pokeData.sprites.front_default
     const shinyImg = pokeData.sprites.front_shiny
-    const finalImg = `<img src="${img}" data-img="${shinyImg}">`
+    const finalImg = `<img src="${img}" data-img="${shinyImg}" onclick="shinyPokemon(this)">`
     const btn = document.createElement('button')
     btn.className = 'add-btn'
     btn.textContent = 'Add Pokemon To Party!'
 
-    btn.addEventListener('click', (e) => {
-        
-    })
+   
 
     const likeHearts = document.createElement('button')
     likeHearts.className = 'like-btn'
@@ -58,9 +55,19 @@ function pokemonCard(pokeData) {
     pokemonPack.appendChild(pokemonContainer);
 }
 
-function filterPokemon(){
-    let dropdown = document.querySelector('pokemon-dropdown')
-    dropdown.addEventListener('change', e => {
-        selectPokemon(e.target.value)
-    })
+function shinyPokemon(item){
+   let holdSrc = item.src;
+                item.src = item.dataset.img;
+                item.setAttribute("data-img", holdSrc);
+        console.log(item.dataset.img)
+
 }
+
+
+const buttons = Array.from(document.querySelectorAll('.add-btn'));
+buttons.forEach(btn => {
+  btn.addEventListener('click', function addPokemon(e)  {
+    console.log(e)
+  });
+});
+        
