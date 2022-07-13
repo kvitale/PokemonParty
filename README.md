@@ -9,7 +9,6 @@ You're invited to a party, a Pokemon Party!
 - [How to use](#how-to-use)
 - [Built From](#built-from)
 - [How to install](#how-to-install)
-- [Author Info](#author-info)
 
 ---
 
