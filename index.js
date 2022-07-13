@@ -64,6 +64,7 @@ function shinyPokemon(item){
 }
 
 
+
 const buttons = Array.from(document.querySelectorAll('.add-btn'));
 buttons.forEach(btn => {
   btn.addEventListener('click', function addPokemon(e)  {
