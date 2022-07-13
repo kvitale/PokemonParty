@@ -7,7 +7,7 @@ You're invited to a party, a Pokemon Party!
 ### Table Of Contents
 - [Description](#description)
 - [How to use](#how-to-use)
-- [References](#references)
+- [Built From](#built-from)
 - [License](#license)
 - [Author Info](#author-info)
 
@@ -24,6 +24,12 @@ You're invited to a party, a Pokemon Party!
 - You can also change a pokemon from default color to shiny by clicking on the image of whatever Pokemon you choose.
 
 - Also hit the like button the like your favorite Pokemon.
+
+## Built From
+
+- Javascript
+- HTML
+- CSS
 
 
 
