@@ -18,12 +18,13 @@ You're invited to a party, a Pokemon Party!
 
 ## How to use
 
-- Click the "Add Pokemon to party" button to add that Pokemon to your list of Pokemon.
+- Click the "Add Pokemon to party" button to add that Pokemon to your party of Pokemon.
 
 - You can also change a pokemon from default color to shiny by clicking on the image of whatever Pokemon you choose.
 
-
 - Also hit the like button the like your favorite Pokemon.
+
+- If you no longer want the Pokemon in your party, simply hit the "remove Pokemon" button.
 
 ## Built From
 

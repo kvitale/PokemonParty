@@ -95,6 +95,9 @@ this.classList.add("right")
 
 function likeButton() {
   this.style.color = 'red'
-// if red already, change back to black
+if(this.style.color === 'black'){
+    this.style.color = 'red'
+
+}else{this.style.color = "black"}
 }
 
