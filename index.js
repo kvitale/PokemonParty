@@ -35,16 +35,17 @@ function pokemonCard(pokeData) {
     const pokemonNumber = document.createElement('p')
     pokemonNumber.innerText = `#${pokeData.id}`
     const pTypes = document.createElement('ul')
+    pTypes.className = "text"
     const img = pokeData.sprites.front_default
     const shinyImg = pokeData.sprites.front_shiny
     const finalImg = `<img src="${img}" data-img="${shinyImg}" onclick="shinyPokemon(this)">`
     const btn = document.createElement('button')
     const heart = document.createElement('button')
-    btn.addEventListener('click',movePokemon);
+    btn.addEventListener('click', movePokemon);
     btn.className = 'add-btn'
     btn.textContent = 'Add Pokemon To Party!'
     heart.textContent = '♥'
-    heart.addEventListener('click',likeButton);
+    heart.addEventListener('click', likeButton);
 
 
 
@@ -57,47 +58,54 @@ function pokemonCard(pokeData) {
     pokemonPack.appendChild(pokemonContainer);
 }
 
-function shinyPokemon(item){
-   let holdSrc = item.src;
-                item.src = item.dataset.img;
-                item.setAttribute("data-img", holdSrc);
-        
+function shinyPokemon(item) {
+    let holdSrc = item.src;
+    item.src = item.dataset.img;
+    item.setAttribute("data-img", holdSrc);
+
 }
 
 
 
-function pokemonZoom(){
+function pokemonZoom() {
     let pokeZoom = document.getElementsByTagName('img')
-        console.log(pokeZoom)
+    console.log(pokeZoom)
 
 }
-        pokemonZoom()
+pokemonZoom()
 
 
-function movePokemon(){
+function movePokemon() {
 
-const myParty = document.getElementById('mypartyEA');
-const notMine = document.getElementById('poke-container');
-const pokeCard = this.parentElement;
-if(this.classList.contains('right')){
-    notMine.append(pokeCard);
-    this.textContent = "Add Pokemon To Party!"
-    this.classList.remove('right')
-    console.log("YEAHHH")
-}else{
-myParty.append(pokeCard);
-console.log(pokeCard);
-this.textContent = "Remove from Party"
-this.classList.add("right")
-}
+    const myParty = document.getElementById('mypartyEA');
+    const notMine = document.getElementById('poke-container');
+    const pokeCard = this.parentElement;
+    if (this.classList.contains('right')) {
+        notMine.append(pokeCard);
+        this.textContent = "Add Pokemon To Party!"
+        this.classList.remove('right')
+        console.log("YEAHHH")
+    } else {
+        myParty.append(pokeCard);
+        console.log(pokeCard);
+        this.textContent = "Remove from Party"
+        this.classList.add("right")
+    }
 
 }
 
 function likeButton() {
-  this.style.color = 'red'
-if(this.style.color === 'black'){
-    this.style.color = 'red'
 
-}else{this.style.color = "black"}
+    if (this.style.color.includes('red')) {
+        this.style.color = 'black';
+
+    } else { this.style.color = "red" };
 }
+
+
+
+
+
+
+
 
