@@ -1,5 +1,22 @@
 .poke-outer {
 display: flex;
 justify-content: space-between;
+max-width: 1000px;
+margin:0 auto;
 
 }
+.poke-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #1e1b1c;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 25px 10px 25px 0;
+}
+.poke-card h4 {font-size: 1.4em;}
+
+.poke-outer>div {width:50%;}
+
+#poke-container, #mypartyEA {width:100%;}
+
+h1 {text-align:center;}

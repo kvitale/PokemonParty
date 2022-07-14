@@ -29,6 +29,7 @@ function pokemonTypes(types, ul) {
 function pokemonCard(pokeData) {
     const pokemonPack = document.getElementById('poke-container');
     const pokemonContainer = document.createElement("div")
+    pokemonContainer.className = "poke-card";
     const pokemonName = document.createElement('h4')
     pokemonName.innerText = pokeData.name
     const pokemonNumber = document.createElement('p')
@@ -38,8 +39,13 @@ function pokemonCard(pokeData) {
     const shinyImg = pokeData.sprites.front_shiny
     const finalImg = `<img src="${img}" data-img="${shinyImg}" onclick="shinyPokemon(this)">`
     const btn = document.createElement('button')
+    const heart = document.createElement('button')
+    btn.addEventListener('click',movePokemon);
     btn.className = 'add-btn'
     btn.textContent = 'Add Pokemon To Party!'
+    heart.textContent = '♥'
+    heart.addEventListener('click',likeButton);
+
 
 
 
@@ -47,8 +53,7 @@ function pokemonCard(pokeData) {
     pokemonTypes(pokeData.types, pTypes)
     pokemonContainer.append(pokemonName, pokemonNumber);
     pokemonContainer.innerHTML += finalImg;
-    pokemonContainer.append(pTypes, btn,);
-    pokemonContainer.append(likeHearts);
+    pokemonContainer.append(pTypes, btn, heart);
     pokemonPack.appendChild(pokemonContainer);
 }
 
@@ -67,3 +72,29 @@ function pokemonZoom(){
 
 }
         pokemonZoom()
+
+
+function movePokemon(){
+
+const myParty = document.getElementById('mypartyEA');
+const notMine = document.getElementById('poke-container');
+const pokeCard = this.parentElement;
+if(this.classList.contains('right')){
+    notMine.append(pokeCard);
+    this.textContent = "Add Pokemon To Party!"
+    this.classList.remove('right')
+    console.log("YEAHHH")
+}else{
+myParty.append(pokeCard);
+console.log(pokeCard);
+this.textContent = "Remove from Party"
+this.classList.add("right")
+}
+
+}
+
+function likeButton() {
+  this.style.color = 'red'
+// if red already, change back to black
+}
+
