@@ -41,14 +41,7 @@ function pokemonCard(pokeData) {
     btn.className = 'add-btn'
     btn.textContent = 'Add Pokemon To Party!'
 
-    
 
-    
-   
-
-    const likeHearts = document.createElement('button')
-    likeHearts.className = 'like-btn'
-    likeHearts.textContent = ' ♡ '
 
 
     pokemonTypes(pokeData.types, pTypes)
@@ -66,8 +59,11 @@ function shinyPokemon(item){
         
 }
 
-function pokemonZoom(e){
-    let pokeZoom = document.getElementById('poke-container')
-    console.log(pokeZoom)
+
+
+function pokemonZoom(){
+    let pokeZoom = document.getElementsByTagName('img')
+        console.log(pokeZoom)
+
 }
-        
+        pokemonZoom()
