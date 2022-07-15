@@ -96,7 +96,22 @@ function likeButton() {
     } else { this.style.color = "red" };
 }
 
-function listColor()
+function listColor(e) {
+    if (e.type == "mouseover") {
+        e.target.style.border = "2px solid black";
+        e.target.style.fontSize = "20px";
+        e.target.style.color = "blue";
+        e.target.style.background = "orange";
+
+    } else {
+        e.target.style.border = "none";
+        e.target.style.fontSize = "14px";
+        e.target.style.color = "black";
+        e.target.style.background = "none";
+
+    }
+}
+
 
 
 
