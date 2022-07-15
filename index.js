@@ -21,6 +21,8 @@ fetchPokemon()
 function pokemonTypes(types, ul) {
     types.forEach(function (type) {
         const li = document.createElement('li');
+        li.addEventListener('mouseover', listColor);
+        li.addEventListener('mouseout', listColor);
         li.innerText = type['type']['name'];
         ul.append(li)
     })
@@ -36,9 +38,6 @@ function pokemonCard(pokeData) {
     pokemonNumber.innerText = `#${pokeData.id}`
     const pTypes = document.createElement('ul')
     pTypes.className = "text"
-   
-
-
     const img = pokeData.sprites.front_default
     const shinyImg = pokeData.sprites.front_shiny
     const finalImg = `<img src="${img}" data-img="${shinyImg}" onclick="shinyPokemon(this)">`
@@ -96,6 +95,8 @@ function likeButton() {
 
     } else { this.style.color = "red" };
 }
+
+function listColor()
 
 
 
