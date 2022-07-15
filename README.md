@@ -7,6 +7,7 @@ You're invited to a party, a Pokemon Party!
 ### Table Of Contents
 - [Description](#description)
 - [How to use](#how-to-use)
+- [Random Pokemon Battle Game](#random-pokemon-battle-game)
 - [Built From](#built-from)
 - [How to install](#how-to-install)
 
@@ -28,7 +29,13 @@ You're invited to a party, a Pokemon Party!
 
 - Wave your mouse cursor over Pokemon types for a surprise!
 
+## Random Pokemon Battle Game!
 
+- Load up your original Pokemon game with a friend and scroll then randomly stop.
+
+- Scroll and stop on 6 Pokemon and make that your party.
+
+- Battle your friends for some Pokemon fun!
 
 ## Built From
 
