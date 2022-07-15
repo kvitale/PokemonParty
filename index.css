@@ -20,3 +20,11 @@ margin:0 auto;
 #poke-container, #mypartyEA {width:100%;}
 
 h1 {text-align:center;}
+
+.text li{
+    transition: all .5s;
+padding: 5px;
+margin: 5px 0;
+border-radius: 5px;
+list-style: none;
+}

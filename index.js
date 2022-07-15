@@ -35,7 +35,7 @@ function pokemonCard(pokeData) {
     const pokemonNumber = document.createElement('p')
     pokemonNumber.innerText = `#${pokeData.id}`
     const pTypes = document.createElement('ul')
-    pTypes.setAttribute("id","text")
+    pTypes.className = "text"
    
 
 
