@@ -45,7 +45,6 @@ function pokemonCard(pokeData) {
     const btn = document.createElement('button')
     const heart = document.createElement('button')
     btn.addEventListener('click', movePokemon);
-    btn.addEventListener('mouseover', buttonColor())
     btn.className = 'add-btn'
     btn.textContent = 'Add Pokemon To Party!'
     heart.textContent = '♥'
