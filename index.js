@@ -35,13 +35,17 @@ function pokemonCard(pokeData) {
     const pokemonNumber = document.createElement('p')
     pokemonNumber.innerText = `#${pokeData.id}`
     const pTypes = document.createElement('ul')
-    pTypes.className = "text"
+    pTypes.setAttribute("id","text")
+   
+
+
     const img = pokeData.sprites.front_default
     const shinyImg = pokeData.sprites.front_shiny
     const finalImg = `<img src="${img}" data-img="${shinyImg}" onclick="shinyPokemon(this)">`
     const btn = document.createElement('button')
     const heart = document.createElement('button')
     btn.addEventListener('click', movePokemon);
+    btn.addEventListener('mouseover', buttonColor())
     btn.className = 'add-btn'
     btn.textContent = 'Add Pokemon To Party!'
     heart.textContent = '♥'
@@ -65,14 +69,6 @@ function shinyPokemon(item) {
 
 }
 
-
-
-function pokemonZoom() {
-    let pokeZoom = document.getElementsByTagName('img')
-    console.log(pokeZoom)
-
-}
-pokemonZoom()
 
 
 function movePokemon() {
@@ -101,6 +97,10 @@ function likeButton() {
 
     } else { this.style.color = "red" };
 }
+
+
+
+
 
 
 
