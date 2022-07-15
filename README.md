@@ -26,6 +26,10 @@ You're invited to a party, a Pokemon Party!
 
 - If you no longer want the Pokemon in your party, simply hit the "remove Pokemon" button.
 
+- Wave your mouse cursor over Pokemon types for a surprise!
+
+
+
 ## Built From
 
 - Javascript
